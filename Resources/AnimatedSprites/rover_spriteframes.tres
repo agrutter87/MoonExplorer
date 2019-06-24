@@ -1,0 +1,15 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=2]
+
+[ext_resource path="res://Resources/AnimatedSprites/rover_driving_spriteframe_1.png" type="Texture" id=1]
+[ext_resource path="res://Resources/AnimatedSprites/rover_driving_spriteframe_2.png" type="Texture" id=2]
+[ext_resource path="res://Resources/AnimatedSprites/rover_driving_spriteframe_3.png" type="Texture" id=3]
+[ext_resource path="res://Resources/AnimatedSprites/rover_driving_spriteframe_4.png" type="Texture" id=4]
+[ext_resource path="res://Resources/AnimatedSprites/rover_driving_spriteframe_5.png" type="Texture" id=5]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "driving",
+"speed": 1.0
+} ]
