@@ -1,0 +1,77 @@
+[gd_scene format=2]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 219.0
+margin_bottom = 82.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 212.0
+margin_bottom = 75.0
+
+[node name="LabelVBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
+margin_right = 46.0
+margin_bottom = 68.0
+
+[node name="BatteryLabel" type="Label" parent="PanelContainer/HBoxContainer/LabelVBoxContainer"]
+margin_right = 46.0
+margin_bottom = 14.0
+text = "Battery"
+align = 2
+
+[node name="WaterLabel" type="Label" parent="PanelContainer/HBoxContainer/LabelVBoxContainer"]
+margin_top = 18.0
+margin_right = 46.0
+margin_bottom = 32.0
+text = "H2O"
+align = 2
+
+[node name="HydrogenLabel" type="Label" parent="PanelContainer/HBoxContainer/LabelVBoxContainer"]
+margin_top = 36.0
+margin_right = 46.0
+margin_bottom = 50.0
+text = "H2"
+align = 2
+
+[node name="OxygenLabel" type="Label" parent="PanelContainer/HBoxContainer/LabelVBoxContainer"]
+margin_top = 54.0
+margin_right = 46.0
+margin_bottom = 68.0
+text = "O2"
+align = 2
+
+[node name="ProgressVBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
+margin_left = 50.0
+margin_right = 205.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+
+[node name="BatteryProgressBar" type="ProgressBar" parent="PanelContainer/HBoxContainer/ProgressVBoxContainer"]
+margin_right = 155.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+value = 100.0
+
+[node name="WaterProgressBar" type="ProgressBar" parent="PanelContainer/HBoxContainer/ProgressVBoxContainer"]
+margin_top = 18.0
+margin_right = 155.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+value = 100.0
+
+[node name="HydrogenProgressBar" type="ProgressBar" parent="PanelContainer/HBoxContainer/ProgressVBoxContainer"]
+margin_top = 36.0
+margin_right = 155.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+value = 100.0
+
+[node name="OxygenProgressBar" type="ProgressBar" parent="PanelContainer/HBoxContainer/ProgressVBoxContainer"]
+margin_top = 54.0
+margin_right = 155.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+value = 100.0
